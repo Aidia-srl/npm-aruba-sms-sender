@@ -1,0 +1,23 @@
+{
+  "name": "aruba-sms-sender",
+  "version": "1.0.1",
+  "git": "https://github.com/Aidia-srl/npm-aruba-sms-sender.git",
+  "description": "npm package to send sms using aruba API",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aidia SRL",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "sms",
+    "aruba",
+    "npm",
+    "automate",
+    "API"
+  ]
+}
