@@ -1,9 +1,11 @@
 # npm-aruba-sms-sender
 
 This package is used as wrapper for aruba SMS API.
-Implementation is simple as stand-up and sit on a chair.
+The implementation is as simple as standing-up and sitting on a chair.
+## Usage
+``npm i -S aruba-sms-sender``
 
-Follows an example:
+## Example:
 ```javascript
 
 var sender = require('aruba-sms-sender')
