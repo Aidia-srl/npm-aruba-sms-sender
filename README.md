@@ -1,7 +1,25 @@
 # npm-aruba-sms-sender
 
-until this package is not public...
+This package is used as wrapper for aruba SMS API.
+Implementation it's simple as stand-up and sit on a chair.
 
-1. log into npm using `npm adduser`
-2. publish locally this package `npm publish`
-3. in a new project run `npm i -S aruba-sms-sender`
+Follows an example:
+```javascript
+
+var sender = require('aruba-sms-sender')
+
+const USER = process.env.ARUBA_SMS_USER;
+const PASSWORD = process.env.ARUBA_SMS_PASSWORD;
+
+const recipients = [];
+
+// Alice
+recipients.push('+3933456789')
+// Bob
+recipients.push('3456789')
+// Charlie
+recipients.push(3456789)
+
+sender.sendSMS(USER, PASSWORD, recipients, 'Hello World', 'CUSTOM SENDER NAME');
+
+```
