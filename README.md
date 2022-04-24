@@ -2,10 +2,13 @@
 
 This package is used as wrapper for aruba SMS API.
 The implementation is as simple as standing-up and sitting on a chair.
+
 ## Usage
+
 ``npm i -S aruba-sms-sender``
 
-## Example:
+## Example
+
 ```javascript
 
 var sender = require('aruba-sms-sender')
@@ -22,6 +25,8 @@ recipients.push('3456789')
 // Charlie
 recipients.push(3456789)
 
-sender.sendSMS(USER, PASSWORD, recipients, 'Hello World', 'CUSTOM SENDER NAME');
+const result = sender.sendSMS(USER, PASSWORD, recipients, 'Hello World', 'CUSTOM SENDER NAME');
+
+console.log(result);
 
 ```
